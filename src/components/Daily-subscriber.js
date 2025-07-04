@@ -271,6 +271,13 @@ const DailySubscribers = () => {
                   </td>
                 </tr>
               ))}
+              {filteredSubscribers.length === 0 && (
+    <tr>
+      <td colSpan="5" style={{ textAlign: "center", padding: "20px", color: "gray" }}>
+        No subscribers found for the selected date or search.
+      </td>
+    </tr>
+  )}
             </tbody>
           </table>
         </div>
